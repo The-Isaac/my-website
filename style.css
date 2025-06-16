@@ -110,4 +110,6 @@ footer li {
   justify-content: center;
 }
 
-/**/
+.bag-items {
+  display: inline-block;
+}

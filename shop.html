@@ -33,7 +33,7 @@
     <div>
       <img src="https://github.com/user-attachments/assets/78190c16-7557-40fd-92e2-94e572a825d0"
         alt="mutiples mochis with one bitten revealing a yellow filling" width="100" height="100"></a>
-      <p>Yellow mochi</p>
+      <p>Mochi</p>
       <p id="countMochiCost">2€</p>
       <input type="button" value="Ajouter au panier" onclick="increment(countMochi)" />
     </div>
@@ -46,21 +46,21 @@
     </div>
     <h3>Panier</h3>
     <div>
-      <label for="countRamen">Ramen</label>
-      <input type="button" value="-" onclick="decrement(countRamen)" />
-      <div id="countRamen">0</div>
-      <input type="button" value="+" onclick="increment(countRamen)" />
+      <label for="countRamen" class="bag-items">Ramen</label>
+      <input type="button" value="-" onclick="decrement(countRamen)" class="bag-items"/>
+      <div id="countRamen" class="bag-items">0</div>
+      <input type="button" value="+" onclick="increment(countRamen)"  class="bag-items"/>
     </div>
     <div>
-      <label for="countMochi">Mochi</label>
-      <input type="button" value="-" onclick="decrement(countMochi)" />
-      <div id="countMochi">0</div>
-      <input type="button" value="+" onclick="increment(countMochi)" />
+      <label for="countMochi" class="bag-items">Mochi</label>
+      <input type="button" value="-" onclick="decrement(countMochi)" class="bag-items"/>
+      <div id="countMochi" class="bag-items">0</div>
+      <input type="button" value="+" onclick="increment(countMochi)" class="bag-items"/>
     </div>
     <p>Produits:
-    <div id="total-items">0</div>
+    <div id="total-items" class="bag-items">0</div>
     </p>
-    <p>A payer:<div id="total-cost">0</div>
+    <p>A payer: <div id="total-cost" class="bag-items">0</div>
      €
     </p>
     
