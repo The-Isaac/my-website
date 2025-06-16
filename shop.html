@@ -1,53 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>test website</title>
-        <link href="style.css" rel="stylesheet">
-    <!--add a css file-->
-    </head>
-    <body>
-        <header>
-      <ul>
-        <li><a href="index.html" class="topright-link">Accueil</a></li>
-        <li><a href="about.html" class="topright-link">A propos</a></li>
-        <li><a href="account.html" class="topright-link">Compte</a></li>
-        <li><a href="pictures.html" class="topright-link">Photos</a></li>
-        <li>
-          <a href="indexEn.html" class="topright-link">Langue : English</a>
-        </li>
-      </ul>
-    </header>
-        <main>
-            <section>
-                <h1>The Store</h1>
-            <p>If it's there, it's <u>pretty</u> available.</p>
-            </section>
-            <h2>The products:</h2>
-            <!--Add a picture of the product, a text, the price. These three things needs to be clickable.-->
-            
-            <section>
-                <a href="mochi.html"><img src="https://github.com/user-attachments/assets/78190c16-7557-40fd-92e2-94e572a825d0" alt="mochi in Japan" width="100" height="100"></a>
-                <p>Yellow mochi</p>
-                <P>2€</P>
-            </section>
-            <section><img src="https://github.com/user-attachments/assets/5be74d5f-18b3-4c8e-be6e-631047ded813" alt="Ramen" width="100" height="100">
-                <p>Ramen</p>
-                <P>5€</P>
-            </section>
-        </main>
-        <footer>
-      <ul>
-        <li>
-          <a href="contact.html" class="bottom-link">Contact</a>
-        </li>
-        <li>
-          <a href="privacy-policy.html" class="bottom-link">Politique de confidentialité</a>
-        </li>
-        <li><a href="opinion.html" class="bottom-link">Avis</a></li>
-      </ul>
-    </footer>
-    </body>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test website</title>
+  <link href="style.css" rel="stylesheet">
+  <!--add a css file-->
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="index.html" class="topright-link">Accueil</a></li>
+      <li><a href="about.html" class="topright-link">A propos</a></li>
+      <li><a href="account.html" class="topright-link">Compte</a></li>
+      <li><a href="pictures.html" class="topright-link">Photos</a></li>
+      <li>
+        <a href="indexEn.html" class="topright-link">Langue : English</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <section>
+      <h1>The Store</h1>
+      <p>If it's there, it's <u>pretty</u> available.</p>
+    </section>
+    <h2>The products:</h2>
+    <!--Add a picture of the product, a text, the price. These three things needs to be clickable.-->
+
+    <div>
+      <img src="https://github.com/user-attachments/assets/78190c16-7557-40fd-92e2-94e572a825d0"
+        alt="mutiples mochis with one bitten revealing a yellow filling" width="100" height="100"></a>
+      <p>Yellow mochi</p>
+      <p id="countMochiCost">2€</p>
+      <input type="button" value="Ajoute au panier" onclick="increment(countMochi)" />
+    </div>
+    <div>
+      <img src="https://github.com/user-attachments/assets/5be74d5f-18b3-4c8e-be6e-631047ded813" alt="Ramen" width="100"
+        height="100">
+      <p>Ramen</p>
+      <p id="costRamen">5€</p>
+      <input type="button" value="Ajouter au panier" onclick="increment(countRamen)" />
+    </div>
+    <h3>Panier</h3>
+    <div>
+      <label for="countRamen">Ramen</label>
+      <input type="button" value="-" onclick="decrement(countRamen)" />
+      <div id="countRamen">0</div>
+      <input type="button" value="+" onclick="increment(countRamen)" />
+    </div>
+    <div>
+      <label for="countMochi">Mochi</label>
+      <input type="button" value="-" onclick="decrement(countMochi)" />
+      <div id="countMochi">0</div>
+      <input type="button" value="+" onclick="increment(countMochi)" />
+    </div>
+    <p>Total items:
+    <div id="total-items">0</div>
+    </p>
+    <p>Total cost :
+     €
+    </p>
+    <div id="total-cost">0</div>
+
+
+  </main>
+  <footer>
+    <ul>
+      <li>
+        <a href="contact.html" class="bottom-link">Contact</a>
+      </li>
+      <li>
+        <a href="privacy-policy.html" class="bottom-link">Politique de confidentialité</a>
+      </li>
+      <li><a href="opinion.html" class="bottom-link">Avis</a></li>
+    </ul>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

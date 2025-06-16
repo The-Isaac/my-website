@@ -12,9 +12,8 @@ main {
 
 #index-body {
   background-image: url("assets/img/20240105_175619.jpg");
-  background-size:cover;
+  background-size: cover;
   background-color: rgb(43, 42, 40);
-  
 }
 
 #index-main {
@@ -25,7 +24,6 @@ main {
   margin-bottom: 500px;
   padding: 10px;
   border: 10px groove rgb(104, 103, 103);
-
 }
 
 #index-header {
@@ -33,7 +31,6 @@ main {
   background-color: transparent;
   border: 0px;
 }
-
 
 .price {
   display: inline;
@@ -46,12 +43,10 @@ header {
   border: 1px solid;
 }
 
-
 header ul {
   display: flex;
   justify-content: space-evenly;
-  padding:0;
-  
+  padding: 0;
 }
 
 header li {
@@ -72,13 +67,8 @@ header li {
 }
 
 p {
-  
   display: inline-block;
 }
-
-
-
-
 
 .isaac {
   display: flexbox;
@@ -119,6 +109,5 @@ footer li {
   color: black;
   justify-content: center;
 }
-
 
 /**/
