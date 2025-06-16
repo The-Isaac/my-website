@@ -1,8 +1,39 @@
 body {
-  background-color: rgb(235, 223, 185);
+  background-color: rgb(240, 206, 138);
   font-family: "Times New Roman", Times, serif;
   min-height: 100vh;
 }
+
+main {
+  margin: 10px;
+}
+
+/*Home page background*/
+
+#index-body {
+  background-image: url("assets/img/20240105_175619.jpg");
+  background-size:cover;
+  background-color: rgb(43, 42, 40);
+  
+}
+
+#index-main {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 40%;
+  margin: 10px;
+  margin-bottom: 500px;
+  padding: 10px;
+  border: 10px groove rgb(104, 103, 103);
+
+}
+
+#index-header {
+  opacity: 0.5;
+  background-color: transparent;
+  border: 0px;
+}
+
 
 .price {
   display: inline;
@@ -41,19 +72,13 @@ header li {
 }
 
 p {
-  width: 800px;
+  
   display: inline-block;
 }
 
-.top-p {
-  display: block;
-}
 
-.next-to-pic {
-  width: 800px;
-  display: flexbox;
-  margin-right: 10%;
-}
+
+
 
 .isaac {
   display: flexbox;
@@ -94,3 +119,6 @@ footer li {
   color: black;
   justify-content: center;
 }
+
+
+/**/
