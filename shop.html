@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>test website</title>
+  <title>Magasin</title>
   <link href="style.css" rel="stylesheet">
   <!--add a css file-->
 </head>
@@ -24,10 +24,10 @@
   </header>
   <main>
     <section>
-      <h1>The Store</h1>
-      <p>If it's there, it's <u>pretty</u> available.</p>
+      <h1>Le Magasin</h1>
+      <p>Bienvenue sur la page du magasin. Pour le moment, il est possible de voir quelques changements s'opérer en cliquant sur les boutons.</p>
     </section>
-    <h2>The products:</h2>
+    <h2>Les produits:</h2>
     <!--Add a picture of the product, a text, the price. These three things needs to be clickable.-->
 
     <div>
@@ -35,7 +35,7 @@
         alt="mutiples mochis with one bitten revealing a yellow filling" width="100" height="100"></a>
       <p>Yellow mochi</p>
       <p id="countMochiCost">2€</p>
-      <input type="button" value="Ajoute au panier" onclick="increment(countMochi)" />
+      <input type="button" value="Ajouter au panier" onclick="increment(countMochi)" />
     </div>
     <div>
       <img src="https://github.com/user-attachments/assets/5be74d5f-18b3-4c8e-be6e-631047ded813" alt="Ramen" width="100"
@@ -57,13 +57,13 @@
       <div id="countMochi">0</div>
       <input type="button" value="+" onclick="increment(countMochi)" />
     </div>
-    <p>Total items:
+    <p>Produits:
     <div id="total-items">0</div>
     </p>
-    <p>Total cost :
+    <p>A payer:<div id="total-cost">0</div>
      €
     </p>
-    <div id="total-cost">0</div>
+    
 
 
   </main>
