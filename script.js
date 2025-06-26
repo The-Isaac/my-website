@@ -1,5 +1,4 @@
-let countRamen = document.getElementById("countRamen");
-let countMochi = document.getElementById("countMochi");
+
 let totalItems = document.getElementById("total-items");
 let totalCost = document.getElementById("total-cost");
 let fullString ="";
@@ -9,7 +8,9 @@ let cost = "Cost";
 function increment(food) {
   food.innerText = parseInt(food.innerText) + 1;
   totalItems.innerText = parseInt(totalItems.innerText) + 1;
-  fullString = food.concat(cost);
+  fullString = fullString.concat(cost);
+    let content = document.getElementById("contentString");
+    content.innerText = fullString;
   let foodPrice = document.getElementById(fullString);
   totalCost.innerText = parseInt(totalCost.innerText) + parseInt(foodPrice);
 }
@@ -20,4 +21,5 @@ function decrement(food) {
     totalItems.innerText = parseInt(totalItems.innerText) - 1;
   }
 }
+
 
